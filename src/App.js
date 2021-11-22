@@ -85,8 +85,7 @@ const MintForm = () => {
     return (
       metadata.title !== "" &&
       metadata.description !== "" &&
-      metadata.copies > 0 &&
-      metadata.media !== ""
+      metadata.copies > 0
     );
   };
 
