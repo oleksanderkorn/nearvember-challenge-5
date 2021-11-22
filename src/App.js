@@ -107,7 +107,7 @@ const MintForm = () => {
 
   const mintNft = async () => {
     const ref = drawRef.current;
-    const drawUrl = ref.getDataURL("image/jpeg", false, "#000");
+    const drawUrl = ref.getDataURL("image/jpeg", false, "#fff");
     const blob = await (await fetch(drawUrl)).blob();
     var reader = new FileReader();
     reader.onloadend = async function () {
