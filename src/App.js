@@ -42,7 +42,7 @@ export default function App() {
             style={{ marginTop: 65, textAlign: "center", marginRight: 20 }}
             variant="h6"
           >
-            Hi {window.accountId}! Mint your Pixel Art NFT!
+            Hi {window.accountId}! Draw your Own NFT!
           </Typography>
           <MintForm />
         </Box>
@@ -51,7 +51,7 @@ export default function App() {
           style={{ marginTop: 65, textAlign: "center", marginRight: 20 }}
           variant="h6"
         >
-          Sign in to create and mint your unique Pixel Art NFT!
+          Sign in to draw and mint your unique NFT!
         </Typography>
       )}
     </>
