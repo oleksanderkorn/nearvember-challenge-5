@@ -15,6 +15,8 @@ import {
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import IconRefresh from "@mui/icons-material/Refresh";
+import DeleteIcon from "@mui/icons-material/Delete";
+import UndoIcon from "@mui/icons-material/Undo";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
@@ -23,6 +25,7 @@ import "./global.css";
 import randomWords from "random-words";
 import Big from "big.js";
 import axios from "axios";
+import CanvasDraw from "react-canvas-draw";
 
 import getConfig from "./config";
 const { networkId } = getConfig(process.env.NODE_ENV || "testnet");
@@ -103,9 +106,9 @@ const MintForm = () => {
     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDViNDlGMUNDRmY2MGVkMWEwNDJmZEU5ODIzNDNhQTRiZWRBOUIzOTkiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTYzNzYxNjczMTcyNiwibmFtZSI6Im5lYXJ2ZXJtYmVyIn0.p-isz43Ls6ljKY2A9csp0dg1IKR7nWJZ687ruOmRXAk";
 
   const mintNft = async () => {
-    const canvas = canvasRef.current;
-    const dataUrl = canvas.toDataURL();
-    const blob = await (await fetch(dataUrl)).blob();
+    const ref = drawRef.current;
+    const drawUrl = ref.getDataURL("image/jpeg", false, "#000");
+    const blob = await (await fetch(drawUrl)).blob();
     var reader = new FileReader();
     reader.onloadend = async function () {
       const response = await axios.post(
@@ -121,14 +124,15 @@ const MintForm = () => {
     reader.readAsArrayBuffer(blob);
   };
 
-  const canvasRef = useRef(null);
+  const drawRef = useRef(null);
 
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    const context = canvas.getContext("2d");
-    context.fillStyle = "#000000";
-    context.fillRect(0, 0, context.canvas.width, context.canvas.height);
-  }, []);
+  const cleanCanvas = () => {
+    drawRef.current.clear();
+  };
+
+  const undo = () => {
+    drawRef.current.undo();
+  };
 
   const contractCall = (mediaUrl) => {
     window.contract
@@ -260,10 +264,43 @@ const MintForm = () => {
           </Grid>
           <Grid
             item
+            xs={6}
+            style={{ display: "flex", justifyContent: "flex-end" }}
+          >
+            <IconButton
+              aria-label="close"
+              color="inherit"
+              size="small"
+              onClick={cleanCanvas}
+            >
+              <DeleteIcon />
+            </IconButton>
+          </Grid>
+          <Grid
+            item
+            xs={6}
+            style={{ display: "flex", justifyContent: "start" }}
+          >
+            <IconButton
+              aria-label="close"
+              color="inherit"
+              size="small"
+              onClick={undo}
+            >
+              <UndoIcon />
+            </IconButton>
+          </Grid>
+          <Grid
+            item
             xs={12}
             style={{ display: "flex", justifyContent: "center" }}
           >
-            <canvas ref={canvasRef} />
+            <CanvasDraw
+              canvasWidth={600}
+              canvasHeight={600}
+              brushColor="rgba(155,12,60,1)"
+              ref={drawRef}
+            />
           </Grid>
           <Grid item xs={12}>
             <Collapse in={error !== ""}>
