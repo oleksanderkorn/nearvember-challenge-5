@@ -1,0 +1,463 @@
+/* roboto-cyrillic-ext-300-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url('/roboto-cyrillic-ext-300-normal.c45e5510.woff2') format('woff2'), url('/roboto-all-300-normal.33bb8aae.woff') format('woff');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* roboto-cyrillic-300-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url('/roboto-cyrillic-300-normal.22c7de41.woff2') format('woff2'), url('/roboto-all-300-normal.33bb8aae.woff') format('woff');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* roboto-greek-ext-300-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url('/roboto-greek-ext-300-normal.4daca969.woff2') format('woff2'), url('/roboto-all-300-normal.33bb8aae.woff') format('woff');
+  unicode-range: U+1F00-1FFF;
+}
+/* roboto-greek-300-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url('/roboto-greek-300-normal.acc2aa79.woff2') format('woff2'), url('/roboto-all-300-normal.33bb8aae.woff') format('woff');
+  unicode-range: U+0370-03FF;
+}
+/* roboto-vietnamese-300-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url('/roboto-vietnamese-300-normal.6cf52f15.woff2') format('woff2'), url('/roboto-all-300-normal.33bb8aae.woff') format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* roboto-latin-ext-300-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url('/roboto-latin-ext-300-normal.7e7e9606.woff2') format('woff2'), url('/roboto-all-300-normal.33bb8aae.woff') format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* roboto-latin-300-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url('/roboto-latin-300-normal.a9a1052c.woff2') format('woff2'), url('/roboto-all-300-normal.33bb8aae.woff') format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* roboto-cyrillic-ext-400-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('/roboto-cyrillic-ext-400-normal.46fa43d4.woff2') format('woff2'), url('/roboto-all-400-normal.66658700.woff') format('woff');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* roboto-cyrillic-400-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('/roboto-cyrillic-400-normal.509d4f25.woff2') format('woff2'), url('/roboto-all-400-normal.66658700.woff') format('woff');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* roboto-greek-ext-400-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('/roboto-greek-ext-400-normal.9717f778.woff2') format('woff2'), url('/roboto-all-400-normal.66658700.woff') format('woff');
+  unicode-range: U+1F00-1FFF;
+}
+/* roboto-greek-400-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('/roboto-greek-400-normal.1e3d9f9a.woff2') format('woff2'), url('/roboto-all-400-normal.66658700.woff') format('woff');
+  unicode-range: U+0370-03FF;
+}
+/* roboto-vietnamese-400-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('/roboto-vietnamese-400-normal.3f4d601c.woff2') format('woff2'), url('/roboto-all-400-normal.66658700.woff') format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* roboto-latin-ext-400-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('/roboto-latin-ext-400-normal.e0ff2215.woff2') format('woff2'), url('/roboto-all-400-normal.66658700.woff') format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* roboto-latin-400-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('/roboto-latin-400-normal.7b9b75cd.woff2') format('woff2'), url('/roboto-all-400-normal.66658700.woff') format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* roboto-cyrillic-ext-500-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url('/roboto-cyrillic-ext-500-normal.b2c0dc4c.woff2') format('woff2'), url('/roboto-all-500-normal.7ef203b7.woff') format('woff');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* roboto-cyrillic-500-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url('/roboto-cyrillic-500-normal.8a5c63cf.woff2') format('woff2'), url('/roboto-all-500-normal.7ef203b7.woff') format('woff');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* roboto-greek-ext-500-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url('/roboto-greek-ext-500-normal.613caa5b.woff2') format('woff2'), url('/roboto-all-500-normal.7ef203b7.woff') format('woff');
+  unicode-range: U+1F00-1FFF;
+}
+/* roboto-greek-500-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url('/roboto-greek-500-normal.3326b36b.woff2') format('woff2'), url('/roboto-all-500-normal.7ef203b7.woff') format('woff');
+  unicode-range: U+0370-03FF;
+}
+/* roboto-vietnamese-500-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url('/roboto-vietnamese-500-normal.4e7cba53.woff2') format('woff2'), url('/roboto-all-500-normal.7ef203b7.woff') format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* roboto-latin-ext-500-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url('/roboto-latin-ext-500-normal.17f97d21.woff2') format('woff2'), url('/roboto-all-500-normal.7ef203b7.woff') format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* roboto-latin-500-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url('/roboto-latin-500-normal.29025291.woff2') format('woff2'), url('/roboto-all-500-normal.7ef203b7.woff') format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* roboto-cyrillic-ext-700-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url('/roboto-cyrillic-ext-700-normal.c52d0086.woff2') format('woff2'), url('/roboto-all-700-normal.bc6e081e.woff') format('woff');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* roboto-cyrillic-700-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url('/roboto-cyrillic-700-normal.aea15bda.woff2') format('woff2'), url('/roboto-all-700-normal.bc6e081e.woff') format('woff');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* roboto-greek-ext-700-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url('/roboto-greek-ext-700-normal.6a6eca22.woff2') format('woff2'), url('/roboto-all-700-normal.bc6e081e.woff') format('woff');
+  unicode-range: U+1F00-1FFF;
+}
+/* roboto-greek-700-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url('/roboto-greek-700-normal.bae5b4ac.woff2') format('woff2'), url('/roboto-all-700-normal.bc6e081e.woff') format('woff');
+  unicode-range: U+0370-03FF;
+}
+/* roboto-vietnamese-700-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url('/roboto-vietnamese-700-normal.25c64f05.woff2') format('woff2'), url('/roboto-all-700-normal.bc6e081e.woff') format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* roboto-latin-ext-700-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url('/roboto-latin-ext-700-normal.ac2e2858.woff2') format('woff2'), url('/roboto-all-700-normal.bc6e081e.woff') format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* roboto-latin-700-normal*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url('/roboto-latin-700-normal.456ca697.woff2') format('woff2'), url('/roboto-all-700-normal.bc6e081e.woff') format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  --bg: #efefef;
+  --fg: #1e1e1e;
+  --gray: #555;
+  --light-gray: #ccc;
+  --shadow: #e6e6e6;
+  --success: rgb(90, 206, 132);
+  --primary: #ff585d;
+  --secondary: #0072ce;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: calc(0.9em + 0.5vw);
+  line-height: 1.3;
+}
+
+body {
+  margin: 0;
+  padding: 1em;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 25em;
+}
+
+h1 {
+  background-image: url(/logo-black.eab7a939.svg);
+  background-position: center 1em;
+  background-repeat: no-repeat;
+  background-size: auto 1.5em;
+  margin-top: 0;
+  padding: 3.5em 0 0.5em;
+  text-align: center;
+}
+
+a,
+.link {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover,
+a:focus,
+.link:hover,
+.link:focus {
+  text-decoration: underline;
+}
+a:active,
+.link:active {
+  color: var(--secondary);
+}
+
+button,
+input {
+  font: inherit;
+  outline: none;
+}
+
+button {
+  background-color: var(--secondary);
+  border-radius: 5px;
+  border: none;
+  color: #efefef;
+  cursor: pointer;
+  padding: 0.3em 0.75em;
+  transition: transform 30ms;
+}
+button:hover,
+button:focus {
+  box-shadow: 0 0 10em rgba(255, 255, 255, 0.2) inset;
+}
+button:active {
+  box-shadow: 0 0 10em rgba(0, 0, 0, 0.1) inset;
+}
+button.link {
+  background: none;
+  border: none;
+  box-shadow: none;
+  display: inline;
+}
+[disabled] button,
+button[disabled] {
+  box-shadow: none;
+  background-color: var(--light-gray);
+  color: gray;
+  cursor: not-allowed;
+  transform: none;
+}
+[disabled] button {
+  text-indent: -900em;
+  width: 2em;
+  position: relative;
+}
+[disabled] button:after {
+  content: " ";
+  display: block;
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  border-color: var(--fg) transparent var(--fg) transparent;
+  animation: loader 1.2s linear infinite;
+  position: absolute;
+  top: 0.45em;
+  right: 0.5em;
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+fieldset {
+  border: none;
+  padding: 2em 0;
+}
+
+input {
+  background-color: var(--shadow);
+  border: none;
+  border-radius: 5px 0 0 5px;
+  caret-color: var(--primary);
+  color: inherit;
+  padding: 0.25em 1em;
+}
+input::selection {
+  background-color: var(--secondary);
+  color: #efefef;
+}
+input:focus {
+  box-shadow: 0 0 10em rgba(0, 0, 0, 0.02) inset;
+}
+
+code {
+  color: var(--gray);
+}
+
+li {
+  padding-bottom: 1em;
+}
+
+aside {
+  animation: notify ease-in-out 10s;
+  background-color: var(--shadow);
+  border-radius: 5px;
+  bottom: 0;
+  font-size: 0.8em;
+  margin: 1em;
+  padding: 1em;
+  position: fixed;
+  transform: translateY(10em);
+  right: 0;
+}
+aside footer {
+  display: flex;
+  font-size: 0.9em;
+  justify-content: space-between;
+  margin-top: 0.5em;
+}
+aside footer *:first-child {
+  color: var(--success);
+}
+aside footer *:last-child {
+  color: var(--gray);
+}
+@keyframes notify {
+  0% {
+    transform: translateY(10em);
+  }
+  5% {
+    transform: translateY(0);
+  }
+  95% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10em);
+  }
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    --bg: #1e1e1e;
+    --fg: #efefef;
+    --gray: #aaa;
+    --shadow: #2a2a2a;
+    --light-gray: #444;
+  }
+  h1 {
+    background-image: url(assets/logo-white.svg);
+  }
+  input:focus {
+    box-shadow: 0 0 10em rgba(255, 255, 255, 0.02) inset;
+  }
+} */
+
+
+/*# sourceMappingURL=/src.e31bb0bc.css.map */
