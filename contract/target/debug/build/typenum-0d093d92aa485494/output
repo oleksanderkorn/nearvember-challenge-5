@@ -1,2 +1,0 @@
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/oleksandrkorniienko/near-developer/nearvember-challenge-5/contract/target/debug/build/typenum-0d093d92aa485494/out/consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=/Users/oleksandrkorniienko/near-developer/nearvember-challenge-5/contract/target/debug/build/typenum-0d093d92aa485494/out/op.rs
