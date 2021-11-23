@@ -12,6 +12,7 @@ import {
   Alert,
   Collapse,
   IconButton,
+  Avatar,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import IconRefresh from "@mui/icons-material/Refresh";
@@ -69,6 +70,7 @@ const MintForm = () => {
   const [showNotification, setShowNotification] = useState(false);
   const [isLoading, setIsloading] = useState(false);
   const [error, setError] = useState("");
+  const [color, setColor] = useState("#000");
 
   const [metadata, setMetadata] = useState({
     title: randomString(),
@@ -143,7 +145,7 @@ const MintForm = () => {
           metadata: {
             title: metadata.title,
             description: metadata.description,
-            copies: metadata.copies,
+            copies: parseInt(metadata.copies),
             media: mediaUrl,
           },
         },
@@ -262,10 +264,11 @@ const MintForm = () => {
               Mint
             </Button>
           </Grid>
+          <Grid item xs={2}></Grid>
           <Grid
             item
-            xs={6}
-            style={{ display: "flex", justifyContent: "flex-end" }}
+            xs={8}
+            style={{ display: "flex", justifyContent: "space-around" }}
           >
             <IconButton
               aria-label="close"
@@ -275,12 +278,6 @@ const MintForm = () => {
             >
               <DeleteIcon />
             </IconButton>
-          </Grid>
-          <Grid
-            item
-            xs={6}
-            style={{ display: "flex", justifyContent: "start" }}
-          >
             <IconButton
               aria-label="close"
               color="inherit"
@@ -289,7 +286,64 @@ const MintForm = () => {
             >
               <UndoIcon />
             </IconButton>
+            <Avatar
+              style={{ cursor: "pointer" }}
+              onClick={() => setColor("black")}
+              sx={{ bgcolor: "black" }}
+            >
+              {" "}
+            </Avatar>
+            <Avatar
+              style={{ cursor: "pointer" }}
+              onClick={() => setColor("gray")}
+              sx={{ bgcolor: "gray" }}
+            >
+              {" "}
+            </Avatar>
+            <Avatar
+              style={{ cursor: "pointer" }}
+              onClick={() => setColor("red")}
+              sx={{ bgcolor: "red" }}
+            >
+              {" "}
+            </Avatar>
+            <Avatar
+              style={{ cursor: "pointer" }}
+              onClick={() => setColor("blue")}
+              sx={{ bgcolor: "blue" }}
+            >
+              {" "}
+            </Avatar>
+            <Avatar
+              style={{ cursor: "pointer" }}
+              onClick={() => setColor("green")}
+              sx={{ bgcolor: "green" }}
+            >
+              {" "}
+            </Avatar>
+            <Avatar
+              style={{ cursor: "pointer" }}
+              onClick={() => setColor("yellow")}
+              sx={{ bgcolor: "yellow" }}
+            >
+              {" "}
+            </Avatar>
+            <Avatar
+              style={{ cursor: "pointer" }}
+              onClick={() => setColor("purple")}
+              sx={{ bgcolor: "purple" }}
+            >
+              {" "}
+            </Avatar>
+            <Avatar
+              style={{ cursor: "pointer" }}
+              onClick={() => setColor("lightgreen")}
+              sx={{ bgcolor: "lightgreen" }}
+            >
+              {" "}
+            </Avatar>
           </Grid>
+          <Grid item xs={2}></Grid>
           <Grid
             item
             xs={12}
@@ -298,7 +352,7 @@ const MintForm = () => {
             <CanvasDraw
               canvasWidth={600}
               canvasHeight={600}
-              brushColor="rgba(155,12,60,1)"
+              brushColor={color}
               ref={drawRef}
             />
           </Grid>
