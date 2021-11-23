@@ -28,7 +28,7 @@ import axios from "axios";
 import CanvasDraw from "react-canvas-draw";
 
 import getConfig from "./config";
-const { networkId } = getConfig(process.env.NODE_ENV || "testnet");
+const { networkId } = getConfig("testnet");
 
 export default function App() {
   const isLoggedIn = () => window.walletConnection.isSignedIn();
