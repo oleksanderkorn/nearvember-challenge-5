@@ -13,6 +13,10 @@ import {
   Collapse,
   IconButton,
   Avatar,
+  Card,
+  CardMedia,
+  CardActions,
+  CardHeader,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import IconRefresh from "@mui/icons-material/Refresh";
@@ -71,6 +75,7 @@ const MintForm = () => {
   const [isLoading, setIsloading] = useState(false);
   const [error, setError] = useState("");
   const [color, setColor] = useState("#000");
+  const [previousNft, setPreviousNft] = useState(undefined);
 
   const [metadata, setMetadata] = useState({
     title: randomString(),
@@ -136,11 +141,50 @@ const MintForm = () => {
     drawRef.current.undo();
   };
 
+  const removePreviousNft = () => {
+    localStorage.setItem("nft_token_id", null);
+    setPreviousNft(null);
+  };
+
+  useEffect(() => {
+    const existingtTokenId = localStorage.getItem("nft_token_id");
+    getNftByTokenId(existingtTokenId);
+  }, []);
+
+  const getNftByTokenId = (existingtTokenId) => {
+    if (existingtTokenId) {
+      window.contract
+        .nft_token({
+          token_id: existingtTokenId,
+        })
+        .then(
+          (data) => {
+            setPreviousNft(data);
+            setIsloading(false);
+          },
+          (err) => {
+            removePreviousNft();
+            setError(
+              err.kind && err.kind.ExecutionError
+                ? err.kind.ExecutionError
+                : `${err}`
+            );
+            setTimeout(() => {
+              setError("");
+            }, 5000);
+            setIsloading(false);
+          }
+        );
+    }
+  };
+
   const contractCall = (mediaUrl) => {
+    const tokenId = randomTokenId();
+    localStorage.setItem("nft_token_id", tokenId);
     window.contract
       .nft_mint(
         {
-          token_id: randomTokenId(),
+          token_id: tokenId,
           receiver_id: window.accountId,
           metadata: {
             title: metadata.title,
@@ -175,6 +219,36 @@ const MintForm = () => {
         }
       );
   };
+
+  if (previousNft) {
+    return (
+      <Box autoComplete="off">
+        <Grid style={{ marginTop: 10 }} container spacing={2}>
+          <Grid
+            item
+            xs={12}
+            style={{ display: "flex", justifyContent: "center" }}
+          >
+            <Card sx={{ maxWidth: 600 }}>
+              <CardHeader
+                title={previousNft.metadata.title}
+                subheader={previousNft.metadata.description}
+              />
+              <CardMedia
+                component="img"
+                height="600"
+                image={previousNft.metadata.media}
+                alt={previousNft.metadata.title}
+              />
+              <CardActions disableSpacing>
+                <Button onClick={removePreviousNft}>Draw another one</Button>
+              </CardActions>
+            </Card>
+          </Grid>
+        </Grid>
+      </Box>
+    );
+  }
 
   return (
     <>
